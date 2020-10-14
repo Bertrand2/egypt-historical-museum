@@ -1,0 +1,138 @@
+/* POLICE ET COULEURS */
+
+@font-face {
+    font-family: 'muli';
+    src: url('fonts/muli.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'prata';
+    src: url('fonts/prata.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    --color-1: #d99578;
+    --color-2: #302e2f;
+    --color-3: #f2ebe8;
+}
+
+
+/* BANNIERE */
+
+.banner {
+    text-align: center;
+    padding: 50px;
+    background-image: url(../assets/contact/banner.jpg);
+    background-size: auto;
+}
+
+.banner > p {
+    color: var(--color-3);
+}
+
+.banner:last-child {
+    text-align: left;
+}
+
+
+/* INFOS */
+
+img {
+    width: 550px;
+    height: 250px;
+}
+
+.infos {
+    display: grid;
+    grid-template-columns: 260px 100px 150px;
+    grid-template-rows: 250px 210px;
+    column-gap: 20px;
+    margin-top: 80px;
+}
+
+.office {
+    grid-area: 1 / 1 / 2 / span 2;
+}
+
+.name {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.days {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.hours {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+
+/* FORMULAIRE DE CONTACT */
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: repeat(3, 100px) 150px 100px;
+}
+
+.button {
+    background-color: black;
+    color: var(--color-3);
+    width: 100px;
+}
+
+
+/* MAP */
+
+
+/* .map > img {
+    width: 500px;
+    height: 200px;
+} */
+
+/* OTHER VENUES */
+
+.venue {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30px 100px 240px;
+    column-gap: 20px;
+    margin: auto;
+}
+
+.venue > div > img {
+    width: 70px;
+}
+
+.venue > h3 {
+    grid-area: 1 / 1 / 2 / span 3;
+    text-align: center;
+}
+
+.Australia > img {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.Australia > p {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.America > img {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.America > p {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.Switzerland > img {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.Switzerland > p {
+    grid-area: 3 / 3 / 4 / 4;
+}
