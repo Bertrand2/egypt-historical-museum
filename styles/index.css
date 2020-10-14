@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: muli;
+}
+
+html{
+    --color-orange: #d99578;
+    --color-darkgrey: #302e2f;
+    --color-darkcream: #f2ebe8;
+    --color-white: #ffffff;
+    --color-text: #666666;
+}
+
+@font-face {
+    font-family: 'muli';
+    src: url('fonts/muli.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'prata';
+    src: url('fonts/prata.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*=========================
+BODY STRUCTURE
+=========================*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*=========================
+STYLE
+=========================*/
+
+h1, h2{
+    font-family: prata;
+    font-weight: 90;
+    margin-bottom: 20px;
+}
+h1{
+    font-size: 1.8rem;
+}
+h2{
+    font-size: 1.3rem;
+}
+p{
+    word-wrap: break-word;
+    font-size: 0.7rem;
+    color: var(--color-text);
+    margin-bottom: 10px;
+}
+br{
+    height: 5px;
+}
+
+.whiteBG{
+    background-color: var(--color-white);
+}
+.darkgreyBG{
+    background-color: var(--color-darkgrey);
+}
+
+.button{
+    height: max-content;
+    width: max-content;
+    background-color: var(--color-orange);
+    border-radius: 3px;
+    padding: 10px 30px;
+    margin-top: 30px;
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.button>p{
+    margin: 0;
+    color: var(--color-white);
+    font-size: 0.65rem;
+}
+
+/*ABOUT*/
+.about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.about>article{
+    width: 25%;
+    padding: 5%;
+    position: relative;
+}
+.photoShowOff{
+    height: 200px;
+}
+.photoShowOff>*{
+    position: absolute;
+    width: 264px;
+    height: 228px;
+}
+.photoShowOff>img:hover{
+    z-index: 5;
+}
+.about1{
+    top: 130px;
+    left: 150px;
+    z-index: 4;
+}
+.about2{
+    top: 60px;
+    left: 10px;
+    z-index: 2;
+}
+.rectangle{
+    height: 260px;
+    top: 80px;
+    left: 80px;
+    background-color: var(--color-orange);
+    z-index: 1;
+}
+.box{
+    height: 210px;
+    top: 0;
+    left: 132px;
+    border: 2px solid var(--color-darkcream);
+    z-index: 3;
+
+    display:grid;
+    grid-template: 1.5rem 1.5rem 1fr / 50% 15% 35%;
+    grid-template-areas: 
+    "gradientRectangle E stablished"
+    "gradientRectangle E e1995"
+    ". . .";
+}
+.box>.gradientRectangle{
+    grid-area: gradientRectangle;
+}
+.box>.E{
+    grid-area: E;
+    font-family: prata;
+    font-size: 3rem;
+}
+.box>.stablished{
+    grid-area: stablished;
+    font-family: prata;
+    font-size: 1.1rem;
+}
+.box>.e1995{
+    grid-area: e1995;
+    font-family: prata;
+    font-size: 1.1rem;
+
+}
+
+/*BACK TO TOP BUTTON*/
+.toTheTop{
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    background-color: var(--color-darkgrey);
+    border-radius: 3px;
+}
+.toTheTop>img{
+    height: 50%;
+    width: 50%;
+    filter: invert(1);
+}
