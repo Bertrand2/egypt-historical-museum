@@ -9,7 +9,7 @@ html{
     --color-darkgrey: #302e2f;
     --color-darkcream: #f2ebe8;
     --color-white: #ffffff;
-    --color-text: #666666;
+    --color-text: #777777;
 }
 
 @font-face {
@@ -40,19 +40,37 @@ main{
 STYLE
 =========================*/
 
-h1, h2{
+/*GENERAL*/
+h1, h2, h3, h4{
     font-family: prata;
     font-weight: 90;
     margin-bottom: 20px;
 }
+.darkgreyBG h2, .darkgreyBG h3, .darkgreyBG h4{
+    color: var(--color-white);
+}
 h1{
-    font-size: 1.8rem;
+    font-size: 1.9rem;
+    color: var(--color-white);
 }
 h2{
+    font-size: 1.8rem;
+}
+h3{
     font-size: 1.3rem;
+}
+h4{
+    font-size: 1rem;
 }
 p{
     word-wrap: break-word;
+    font-size: 0.7rem;
+    color: var(--color-text);
+    margin-bottom: 10px;
+}
+a{
+    color: inherit;
+    text-decoration: unset;
     font-size: 0.7rem;
     color: var(--color-text);
     margin-bottom: 10px;
@@ -66,6 +84,9 @@ br{
 }
 .darkgreyBG{
     background-color: var(--color-darkgrey);
+}
+.greyTXT{
+    color: var(--color-text);
 }
 
 .button{
@@ -85,6 +106,100 @@ br{
     color: var(--color-white);
     font-size: 0.65rem;
 }
+.marker{
+    border-top: 2px solid var(--color-orange);
+    width: max-content;
+    padding: 10px 0;
+    margin-top: 30px;
+    color: var(--color-text);
+    font-size: 0.5rem;
+}
+
+/*CARROUSEL*/
+.carrousel{
+    position: relative;
+}
+.carrousel__slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.carrousel__image{
+    width: 100%;
+}
+.carrousel__content{
+    position: relative;
+    width: 100%;
+    height: 46.5vw;
+    display: grid;
+    grid-template: 1fr / 1fr 80% 1fr;
+    grid-template-areas: "left center-content right";
+}
+.carrousel__content>*{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.carrousel__left-arrow{
+    grid-area: left;
+    font-size: 4rem;
+    color: var(--color-white);
+    transition: background-color 0.6s, opacity 0.6s;
+}
+.carrousel__left-arrow:hover{
+    background-color: var(--color-darkgrey);
+    opacity: 0.3;
+}
+.carrousel__creed{
+    width: 100%;
+    margin-top: 20vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.carrousel__creed>p{
+    color: var(--color-white);
+    margin: 0;
+}
+.carrousel__creed>hr{
+    width: 40%;
+    size: 1px;
+    color: var(--color-white);
+}
+.carrousel__title{
+    position: relative;
+    object-position: 50% 50%;
+    margin: 1em 0;
+    grid-area: center-content;
+    width: 600px;
+    text-align: center;
+}
+.carrousel__quote{
+    color: var(--color-white);
+    font-weight: 600;
+}
+.carrousel__more{
+    border-radius: 3px;
+    background-color: var(--color-white);
+    color: var(--color-text);
+    padding: 10px 25px;
+    font-size: 0.5rem;
+    font-weight: 600;
+    margin-top: 1vw;
+}
+.carrousel__right-arrow{
+    grid-area: right;
+    font-size: 4rem;
+    color: var(--color-white);
+    transition: background-color 0.6s, opacity 0.6s;
+}
+.carrousel__right-arrow:hover{
+    background-color: var(--color-darkgrey);
+    opacity: 0.3;
+}
 
 /*ABOUT*/
 .about{
@@ -98,40 +213,39 @@ br{
     padding: 5%;
     position: relative;
 }
-.photoShowOff{
+.about__photos{
     height: 200px;
 }
-.photoShowOff>*{
+.about__photos>*{
     position: absolute;
     width: 264px;
     height: 228px;
 }
-.photoShowOff>img:hover{
-    z-index: 5;
-}
-.about1{
+.about__image1{
     top: 130px;
     left: 150px;
     z-index: 4;
 }
-.about2{
+.about__image2{
     top: 60px;
     left: 10px;
     z-index: 2;
 }
-.rectangle{
+.about__rectangle{
     height: 260px;
     top: 80px;
     left: 80px;
     background-color: var(--color-orange);
     z-index: 1;
 }
-.box{
-    height: 210px;
+.about__box{
+    height: 180px;
+    width: 230px;
     top: 0;
     left: 132px;
     border: 2px solid var(--color-darkcream);
     z-index: 3;
+    padding: 10px;
 
     display:grid;
     grid-template: 1.5rem 1.5rem 1fr / 50% 15% 35%;
@@ -140,25 +254,108 @@ br{
     "gradientRectangle E e1995"
     ". . .";
 }
-.box>.gradientRectangle{
+.about__gradient_rectangle{
     grid-area: gradientRectangle;
+    background: linear-gradient(#dddddd , #ffffff);
+    margin: 5px 10px;
+    border-right: 2px solid var(--color-orange);
+
 }
-.box>.E{
+.about__E{
     grid-area: E;
     font-family: prata;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
-.box>.stablished{
+.about__stablished{
     grid-area: stablished;
     font-family: prata;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
-.box>.e1995{
+.about__e1995{
     grid-area: e1995;
     font-family: prata;
     font-size: 1.1rem;
-
 }
+
+/*EXHIBITION*/
+.exhibition{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+.exhibition__exhibitions{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.exhibition__article{
+    width: 280px;
+    margin: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.exhibition__image{
+    width: 100%;
+}
+.exhibition__type{
+    color: var(--color-orange);
+}
+.exhibition__info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.exhibition__date{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 10rem;
+}
+.exhibition__date p{
+    font-size: 0.7rem;
+    margin: 0;
+    padding: 0 0.1rem;
+    color: var(--color-white);
+    background-color: var(--color-darkgrey);
+    z-index: 1;
+}
+.exhibition__start_container{
+    width: 100%;
+    z-index: 1;
+}
+.exhibition__start{
+    width: max-content;
+}
+.exhibition__line{
+    height: 0.45rem;
+    width: 2rem;
+    margin: 0;
+    background-color: var(--color-darkgrey);
+    border-bottom: 1px solid var(--color-orange);
+    z-index: 1;
+}
+.exhibition__more{
+    border: 1px solid #606060;
+    border-radius: 3px;
+    background-color: #404040;
+    color: var(--color-white);
+    padding: 5px 15px;
+}
+.exhibition__rectangle{
+    position: absolute;
+    z-index: 0;
+    height: 1.2rem;
+    width: inherit;
+    margin: 0.3rem;
+    border: 1px solid var(--color-text);
+    border-left: 0px solid var(--color-text);
+}
+
 
 /*BACK TO TOP BUTTON*/
 .toTheTop{
