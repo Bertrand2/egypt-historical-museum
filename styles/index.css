@@ -9,7 +9,7 @@ html{
     --color-darkgrey: #302e2f;
     --color-grey: #404040;
     --color-darkcream: #f2ebe8;
-    --color-white: #ffffff;
+    --color-white: #f5f5f5;
     --color-text: #777777;
 }
 
@@ -205,7 +205,7 @@ br{
     padding: 10px 30px;
     margin-top: 30px;
     
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -248,7 +248,7 @@ br{
     z-index: 3;
     padding: 10px;
 
-    display:grid;
+    display: grid;
     grid-template: 1.5rem 1.5rem 1fr / 50% 15% 35%;
     grid-template-areas: 
     "gradientRectangle E stablished"
@@ -280,14 +280,14 @@ br{
 
 /*EXHIBITION*/
 .exhibition{
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 30px 0;
 }
 .exhibition__exhibitions{
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -296,7 +296,7 @@ br{
     width: 280px;
     padding: 5px;
     margin: 5px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     /*transition: background-color 0.6s;*/
@@ -471,7 +471,6 @@ br{
 
 /*MEMBERSHIP*/
 .membership{
-    background: linear-gradient(90deg, var(--color-darkgrey), var(--color-orange));
     background-image: url("../assets/home/membership2.png");
     background-size: 100%;
     height: 400px;
@@ -548,13 +547,13 @@ br{
 }
 .collections__content1{
     grid-area: content1;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .collections__content2{
     grid-area: content2;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -674,7 +673,7 @@ br{
 }
 .stats__name{
     font-size: 0.8rem;
-    font-family: prata;
+    font-family: muli;
     font-weight: 600;
     color: var(--color-white);
     margin: 0.2rem;
@@ -682,12 +681,149 @@ br{
 
 /*COMMENTS*/
 .comments{
-    height: 200px;
+    background-image: url("../assets/home/testi-1-1-bg.jpg");
+    background-size: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.comments__photo{
+    width: 80px;
+    height: 80px;
+    background-image: url("../assets/home/collections-link-decor-1-1.png");
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.comments__picture{
+    width: 80%;
+    border-radius: 50%;
+}
+.comments__author{
+    width: 150px;
+    height: 90px;
+    background-image: url("../assets/home/comment-bubble.png");
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.comments__name{
+    font-family: prata;
+    font-size: 1.2rem;
+    color: var(--color-darkgrey);
+}
+.comments__origin{
+    color: var(--color-orange);
+    font-size: 0.8rem;
+}
+.comments__comment{
+    font-family: prata;
+    font-size: 1.3rem;
+    color: var(--color-darkgrey);
+    text-align: center;
+    max-width: 600px;
+}
+
+.comments__dots{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.comments__dot{
+    width: 10px;
+    height: 10px;
+    background-color: #777777;
+    border-radius: 50%;
+    margin: 5px;
+}
+.comments__dot--current{
+    width: 40px;
+    height: 3px;
+    background-color: var(--color-orange);
+    border-radius: 0;
+    margin: 5px;
 }
 
 /*BLOG*/
 .blog{
-    height: 200px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.blog__content{
+    max-width: 800px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+[class^="blog__article"]{
+    width: 250px;
+    margin: 4%;
+    background-color: white;
+    border: 1px solid var(--color-darkcream);
+}
+.blog__article--tall{
+    height: 100%;
+}
+[class^="blog__article"]>img{
+    width: 100%;
+}
+.blog__author{
+    font-size: 0.7rem;
+    padding: 5px;
+}
+.blog__title{
+    font-family: prata;
+    font-size: 0.9rem;
+    padding: 5px;
+    color: var(--color-darkgrey);
+}
+.blog__hr{
+    width: 50px;
+    margin: 0 5px;
+    color: var(--color-darkcream);
+}
+.blog__description{
+    padding: 5px;
+}
+.blog__details{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog__quote{
+    width: 230px;
+    margin: 4%;
+    padding: 40px 10px;
+    background-color: var(--color-orange);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.blog__citation{
+    font-family: prata;
+    font-size: 0.9rem;
+    color: var(--color-white);
+    text-align: center;
+}
+.blog__quote .blog__more{
+    color: var(--color-white);
 }
 
 
@@ -702,6 +838,7 @@ br{
     position: fixed;
     right: 25px;
     bottom: 25px;
+    z-index: 10;
 
     background-color: var(--color-darkgrey);
     border-radius: 3px;
