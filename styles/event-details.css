@@ -51,6 +51,7 @@ h1{
     font-size: 1.9rem;
     font-weight: 600;
     color: var(--color-white);
+    text-align: center;
 }
 h2{
     font-size: 1.8rem;
@@ -222,43 +223,9 @@ a{
     color: var(--color-darkgrey);
     margin-top: 15px;
 }
-
-/*EVENTS NAVIGATION*/
-.eventsnav{
-    padding: 15px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    border-top: 1px solid var(--color-text);
-}
-.eventsnav__event{
-    padding: 15px;
-    display: flex;
-    flex-direction: row;
-    transition: background-color 0.6s;
-}
-.eventsnav__event:hover{
-    background-color : #cccccc;
-    cursor: pointer;
-}
-.eventsnav__button{
-    text-align: center;
-    vertical-align: middle;
-    width: 2rem;
-    height: 1.8rem;
-    border: 1px solid var(--color-text);
-    border-radius: 50%;
-    padding-top: 0.2rem;
-    margin: 0.2rem
-}
-.eventsnav__prevnext--next{
-    text-align: right;
-}
-.eventsnav__title{
-    font-family: prata;
-    font-size: 1.1rem;
-    color: var(--color-darkgrey);
+#map{
+    width: 250px;
+    height: 260px;
 }
 
 /*SHOP*/
@@ -322,6 +289,47 @@ a{
     width: 100%;
 }
 
+/*EVENTS NAVIGATION*/
+.eventsnav{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 1px solid var(--color-text);
+}
+.eventsnav__event{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    transition: background-color 0.6s;
+}
+.eventsnav__event:hover{
+    background-color : #cccccc;
+    cursor: pointer;
+}
+.eventsnav__button{
+    text-align: center;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--color-text);
+    border-radius: 50%;
+    margin: 5px;
+    padding: 3px;
+}
+.eventsnav__prevnext--next{
+    text-align: right;
+}
+[class^="eventsnav__title"]{
+    font-family: prata;
+    font-size: 1.1rem;
+    color: var(--color-darkgrey);
+}
+.eventsnav__title--next{
+    text-align: right;
+}
+
 /*=========================
 RESPONSIVENESS
 =========================*/
@@ -333,10 +341,14 @@ RESPONSIVENESS
     .main-content{
         flex-direction: column;
         align-items: center;
+        padding: 5%;
+    }
+    .content{
+        width: 100%;
     }
     .content__resume{
         flex-direction: column;
-        height: 1;
+        height: max-content;
     }
     .content__resume-text{
         align-items: flex-start;
@@ -344,5 +356,56 @@ RESPONSIVENESS
     .content__resume-image{
         width: 100%;
         height: auto;
+    }
+    .content__gallery{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .content__gallery-images{
+        align-self: center;
+        width: 100%;
+    }
+    .content__contact{
+        flex-direction: column;
+    }
+    #map{
+        width: 80vw;
+        height: 300px;
+        margin: 40px 0;
+    }
+
+    .shop{
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .content__navigation{
+        flex-wrap: wrap;
+    }
+    [class^="content__navigator"]{
+        flex: 49% 1;
+    }
+    .content__schedule-element{
+        flex-direction: column;
+    }
+    .content__schedule-time{
+        text-align: center;
+    }
+    .content__schedule-program{
+        border-left: 0;
+        border-top: 1px solid var(--color-text);
+        padding: 0 15px;
+    }
+    .content__schedule-program *{
+        text-align: center;
+    }
+    .content__gallery-images{
+        max-height: max-content;
+    }
+
+    .eventsnav{
+        flex-direction: column; 
     }
 }
