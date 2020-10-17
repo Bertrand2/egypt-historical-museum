@@ -321,3 +321,28 @@ a{
     border-radius: 2px;
     width: 100%;
 }
+
+/*=========================
+RESPONSIVENESS
+=========================*/
+
+@media screen and (max-width: 768px) {
+    .banner__caption{
+        left: 1vw;
+    }
+    .main-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .content__resume{
+        flex-direction: column;
+        height: 1;
+    }
+    .content__resume-text{
+        align-items: flex-start;
+    }
+    .content__resume-image{
+        width: 100%;
+        height: auto;
+    }
+}
