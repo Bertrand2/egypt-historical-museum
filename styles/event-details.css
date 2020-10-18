@@ -154,6 +154,11 @@ a{
     color: var(--color-white);
     font-size: 0.8rem;
 }
+.content__resume-icon{
+    height: 0.75rem;
+    margin-right: 4px;
+    filter: invert(69%) sepia(29%) saturate(637%) hue-rotate(330deg) brightness(91%) contrast(86%);
+}
 .content__resume-text{
     font-size: 0.75rem;
     color: var(--color-text);
@@ -267,6 +272,37 @@ a{
 }
 .shop__amount{
     grid-area: amount;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid var(--color-grey);
+    border-radius: 2px;
+}
+.shop__amount-button{
+    background: var(--color-darkgrey);
+    color: var(--color-white);
+    font-weight: 600;
+    width: max(10% , 1.5rem);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shop__amount-button:hover{
+    cursor: pointer;
+}
+#less{
+    border-right: 1px solid var(--color-grey);
+}
+#amount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+#more{
+    border-left: 1px solid var(--color-grey);
 }
 .shop__children{
     grid-area: children;

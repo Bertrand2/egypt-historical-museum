@@ -28,28 +28,28 @@
                         <div class="content__resume-element">
                             <p class="content__resume-name">Date & Time</p>
                             <div class="content__resume-detail">
-                                <img src="" alt="" class="content__resume-icon">
+                                <img src="../assets/event-details/icon-clock.svg" alt="" class="content__resume-icon">
                                 <p class="content__resume-text">04 Nov 2019, 10.00 to 15.00</p>
                             </div>
                         </div>
                         <div class="content__resume-element">
                             <p class="content__resume-name">Location</p>
                             <div class="content__resume-detail">
-                                <img src="" alt="" class="content__resume-icon">
+                                <img src="../assets/event-details/icon-location.svg" alt="" class="content__resume-icon">
                                 <p class="content__resume-text">246 King Street, NY 10011</p>
                             </div>
                         </div>
                         <div class="content__resume-element">
                             <p class="content__resume-name">Organizer</p>
                             <div class="content__resume-detail">
-                                <img src="" alt="" class="content__resume-icon">
+                                <img src="../assets/event-details/icon-person.svg" alt="" class="content__resume-icon">
                                 <p class="content__resume-text">Egypt Historical Museum</p>
                             </div>
                         </div>
                         <div class="content__resume-element--last">
                             <p class="content__resume-name">Ticket Cost</p>
                             <div class="content__resume-detail">
-                                <img src="" alt="" class="content__resume-icon">
+                                <img src="../assets/event-details/icon-tickets.svg" alt="" class="content__resume-icon">
                                 <p class="content__resume-text">Adults - 15$ / Children - 10$</p>
                             </div>
                         </div>
@@ -120,8 +120,12 @@
             <aside class="shop">
                 <p class="shop__title">Online Booking</p>
                 <input type="text" placeholder="Your Name" class="shop__name">
-                <input type="text" placeholder="Email Address" class="shop__mail">
-                <div class="shop__amount"></div>
+                <input type="email" placeholder="Email Address" class="shop__mail">
+                <div class="shop__amount">
+                    <button id="less" class="shop__amount-button">-</button>
+                    <p id="amount">0</p>
+                    <button id="more" class="shop__amount-button">+</button>
+                </div>
                 <input type="text" placeholder="Children" class="shop__children">
                 <textarea name="" id="" placeholder="Description" class="shop__description"></textarea>
                 <button class="shop__button">PROCEED TO BOOK</button>
@@ -148,4 +152,5 @@
 
     </footer>
 </body>
+<script src="../scripts/event-details-shop.js"></script>
 </html>
