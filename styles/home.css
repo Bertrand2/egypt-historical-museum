@@ -298,7 +298,7 @@ br{
 .about__stablished{
     grid-area: stablished;
     font-family: prata;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 .about__e1995{
     grid-area: e1995;
