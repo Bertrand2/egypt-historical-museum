@@ -11,11 +11,11 @@ Since no links between the pages were made, we decided to implement a menu page,
 
 The five pages are :
 
-    [home](https://bertrand2.github.io/egypt-historical-museum/pages/home.html)
-    [about](https://bertrand2.github.io/egypt-historical-museum/pages/about.html)
-    [events](https://bertrand2.github.io/egypt-historical-museum/pages/events.html)
-    [event details](https://bertrand2.github.io/egypt-historical-museum/pages/event-details.html)
-    [contact](https://bertrand2.github.io/egypt-historical-museum/pages/contact.html)
+1. [home](https://bertrand2.github.io/egypt-historical-museum/pages/home.html)
+1. [about](https://bertrand2.github.io/egypt-historical-museum/pages/about.html)
+1. [events](https://bertrand2.github.io/egypt-historical-museum/pages/events.html)
+1. [event details](https://bertrand2.github.io/egypt-historical-museum/pages/event-details.html)
+1. [contact](https://bertrand2.github.io/egypt-historical-museum/pages/contact.html)
 
 
 ## français
@@ -25,8 +25,8 @@ Le site est un modèle pour le Egypt Historical Museum et est basé sur un modè
 
 Les cinq pages sont :
 
-    [home](https://bertrand2.github.io/egypt-historical-museum/pages/home.html)
-    [about](https://bertrand2.github.io/egypt-historical-museum/pages/about.html)
-    [events](https://bertrand2.github.io/egypt-historical-museum/pages/events.html)
-    [event details](https://bertrand2.github.io/egypt-historical-museum/pages/event-details.html)
-    [contact](https://bertrand2.github.io/egypt-historical-museum/pages/contact.html)
+1. [home](https://bertrand2.github.io/egypt-historical-museum/pages/home.html)
+1. [about](https://bertrand2.github.io/egypt-historical-museum/pages/about.html)
+1. [events](https://bertrand2.github.io/egypt-historical-museum/pages/events.html)
+1. [event details](https://bertrand2.github.io/egypt-historical-museum/pages/event-details.html)
+1. [contact](https://bertrand2.github.io/egypt-historical-museum/pages/contact.html)
