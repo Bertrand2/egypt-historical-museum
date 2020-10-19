@@ -1,0 +1,494 @@
+/* POLICE ET COULEURS */
+
+*{
+    /* margin: 0;
+    padding: 0; */
+    font-family: muli;
+}
+
+@font-face {
+    font-family: 'muli';
+    src: url('fonts/muli.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {                           
+    font-family: 'prata';
+    src: url('fonts/prata.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    --color-1: #d99578;
+    --color-2: #302e2f;
+    --color-3: #f2ebe8;
+}
+
+
+/* BANNIERE */
+
+.banner {
+    text-align: center;
+    color: var(--color-3);
+    background-image: url(../assets/contact/banner.jpg);
+    background-size: 100%;
+    background-position-x: right ;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+.banner__title {
+    width: 600px;
+    color: var(--color-3);
+    font-size: 40px;
+    font-family: prata;
+    font-weight: bold;
+    margin: auto;
+    border-bottom: solid 1px var(--color-3);
+    padding: 20px;
+}
+
+.banner_search {
+    width: 320px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+}
+
+.banner__search1 {
+    border-right: solid 1px var(--color-3);
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+.banner__search2 {
+    border-left: solidd 1px var(--color-3);
+    padding-left: 20px;
+    color: var(--color-1);
+}
+
+/* SELECT */
+
+/* .sort {
+    width: 1100px;
+    margin: auto;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    width: 120px;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+} */
+
+.sort select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* .sort:after {
+    top: 50%;
+    left: 85%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(0, 0, 0, 0);
+    border-top-color: #000000;
+    border-width: 5px;
+    margin-top: -2px;
+    z-index: 100;
+}
+
+.sort select:focus {
+    outline: none;
+} */
+
+/* select {
+    color: black;
+    background-color: white;
+    height: 70px;
+    width: 300px; */
+    /* border: none; 
+    border-right: solid 1Px grey; */
+}
+
+option {
+    font-family: prata;
+    width: 100px;
+}
+
+button {
+    background-color: #302E2F;
+    border-radius: 5px;
+    border: none;
+    color: var(--color-3);
+    height: 70px;
+    width: 180px;
+}
+
+
+/* GRID GENERAL  */
+
+.calendar {
+    margin: 40px auto 70px;
+    width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    grid-template-rows: repeat(3, 500px);
+    grid-template-areas:
+    "event1 event2 "
+    "event3 event4 "
+    "event5 event6";
+    column-gap: 30px;
+    row-gap: 40px;
+}
+
+
+/* EVENT 1 */
+
+.calendar__event1 {
+    background-image: url(../assets/events/event-4-1.jpg);
+    background-size: cover;
+    grid-area: event1;
+    width: 600px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 400px 200px;
+    grid-template-rows: 200px 300px;
+    grid-template-areas: 
+    ". Tour"
+    "Infos .";
+}
+
+.calendar__event1-caption {
+    grid-area: Infos;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calendar__tour1 {
+    width: 50px;
+    height: 20px;
+    color: var(--color-2);
+    grid-area: Tour;
+    font-family: prata;
+    text-transform: uppercase;
+    justify-self: end;
+    background-color: white;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.calendar__name1, .calendar__date1, .calendar__time1, .calendar__location1, .calendar__adress1 {
+    font-family: prata;
+}
+
+
+/* EVENT 2 */
+
+.calendar__event2 {
+    background-image: url(../assets/events/event-4-2.jpg);
+    background-size: cover;
+    grid-area: event2;
+    width: 600px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 400px 200px;
+    grid-template-rows: 200px 300px;
+    grid-template-areas: 
+    ". Tour"
+    "Infos .";
+}
+
+.calendar__event2-caption {
+    grid-area: Infos;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calendar__tour2 {
+    width: 50px;
+    height: 20px;
+    color: var(--color-2);
+    grid-area: Tour;
+    font-family: prata;
+    text-transform: uppercase;
+    justify-self: end;
+    background-color: white;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.calendar__name2, .calendar__date2, .calendar__time2, .calendar__location2, .calendar__adress2 {
+    font-family: prata;
+}
+
+
+/* EVENT 3 */
+
+.calendar__event3 {
+    background-image: url(../assets/events/event-4-3.jpg);
+    background-size: cover;
+    grid-area: event3;
+    width: 600px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 400px 200px;
+    grid-template-rows: 200px 300px;
+    grid-template-areas: 
+    ". Tour"
+    "Infos .";
+}
+
+.calendar__event3-caption {
+    grid-area: Infos;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calendar__tour3 {
+    width: 50px;
+    height: 20px;
+    color: var(--color-2);
+    grid-area: Tour;
+    font-family: prata;
+    text-transform: uppercase;
+    justify-self: end;
+    background-color: white;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.calendar__name3, .calendar__date3, .calendar__time3, .calendar__location3, .calendar__adress3 {
+    font-family: prata;
+}
+
+
+/* EVENT 4 */
+
+.calendar__event4 {
+    background-image: url(../assets/events/event-4-4.jpg);
+    background-size: cover;
+    grid-area: event4;
+    width: 600px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 400px 200px;
+    grid-template-rows: 100px 400px;
+    grid-template-areas: 
+    ". Tour"
+    "Infos .";
+}
+
+.calendar__event4-caption {
+    grid-area: Infos;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calendar__tour4 {
+    width: 50px;
+    height: 20px;
+    color: var(--color-2);
+    grid-area: Tour;
+    font-family: prata;
+    text-transform: uppercase;
+    justify-self: end;
+    background-color: white;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.calendar__name4, .calendar__date4, .calendar__time4, .calendar__location4, .calendar__adress4 {
+    font-family: prata;
+}
+
+.button {
+    color: var(--color-3);
+    background-color: var(--color-1);
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* EVENT 5 */
+
+.calendar__event5 {
+    background-image: url(../assets/events/event-4-5.jpg);
+    background-size: cover;
+    grid-area: event5;
+    width: 600px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 400px 200px;
+    grid-template-rows: 200px 300px;
+    grid-template-areas: 
+    ". Tour"
+    "Infos .";
+}
+
+.calendar__event5-caption {
+    grid-area: Infos;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calendar__tour5 {
+    width: 50px;
+    height: 20px;
+    color: var(--color-2);
+    grid-area: Tour;
+    font-family: prata;
+    text-transform: uppercase;
+    justify-self: end;
+    background-color: white;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.calendar__name5, .calendar__date5, .calendar__time5, .calendar__location5, .calendar__adress5 {
+    font-family: prata;
+}
+
+/* EVENT 6 */
+
+.calendar__event6 {
+    background-image: url(../assets/events/event-4-6.jpg);
+    background-size: cover;
+    grid-area: event6;
+    width: 600px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 400px 200px;
+    grid-template-rows: 200px 300px;
+    grid-template-areas: 
+    ". Tour"
+    "Infos .";
+}
+
+.calendar__event6-caption {
+    grid-area: Infos;
+    font-family: prata;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calendar__tour6 {
+    width: 50px;
+    height: 20px;
+    color: var(--color-2);
+    grid-area: Tour;
+    font-family: prata;
+    text-transform: uppercase;
+    justify-self: end;
+    background-color: white;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.calendar__name6, .calendar__date6, .calendar__time6, .calendar__location6, .calendar__adress6 {
+    font-family: prata;
+}
+
+.fa-location-arrow {
+    color: var(--color-1);
+}
+
+.fa-clock {
+    color: var(--color-1);
+    font-weight: bold;
+}
+
+hr {
+    width: 90%;
+    color: rgb(230, 229, 229);
+    height: 1px;
+}
+
+[class^="calendar__name"] {
+    font-size: 25px;
+}
+
+
+/* NAVIGATION */
+
+.nav {
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav__prev, .nav__2, .nav__next {
+    font-family: prata;
+    font-size: 25px;
+    padding: 10px;
+    border: solid 1px rgb(184, 184, 184);
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav__1 {
+    font-family: prata;
+    font-size: 26px;
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--color-3);
+    background-color: var(--color-1);
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+/* RESPONSIVE  */
+
+/* TABLETTE  */
+
+@media screen and (max-width: 768px) {
+    .banner {
+        width: 100%;
+    }
+}
+
+
+/* TELEPHONE */
+
+@media screen and (max-width: 360px) {
+    .banner {
+        width: 50%;
+    }
+}

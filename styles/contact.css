@@ -1,5 +1,11 @@
 /* POLICE ET COULEURS */
 
+*{
+    /* margin: 0;
+    padding: 0; */
+    font-family: muli;
+}
+
 @font-face {
     font-family: 'muli';
     src: url('fonts/muli.ttf') format('truetype');
@@ -7,7 +13,7 @@
     font-style: normal;
 }
 
-@font-face {
+@font-face {                           
     font-family: 'prata';
     src: url('fonts/prata.ttf') format('truetype');
     font-weight: normal;
@@ -25,114 +31,316 @@ html{
 
 .banner {
     text-align: center;
-    padding: 50px;
     background-image: url(../assets/contact/banner.jpg);
-    background-size: auto;
+    background-size: 100%;
+    background-position-x: right ;
+    background-repeat: no-repeat;
+    padding: 50px;
 }
 
-.banner > p {
+.banner__title {
     color: var(--color-3);
+    font-size: 40px;
+    margin-bottom: 5px;
+    font-family: prata;
+    font-weight: bold;
 }
 
-.banner:last-child {
+.banner__text {
+    color: var(--color-3);
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 15px;
+    font-family: prata;
+    font-weight: bold;
+}
+
+.banner__link {
+    width: 1000px;
+    margin: auto;
+}
+
+.banner__content {
+    color: var(--color-3);
     text-align: left;
+    text-transform: uppercase;
 }
-
-
 /* INFOS */
 
-img {
-    width: 550px;
-    height: 250px;
+.container {
+    display: grid;
+    grid-template-columns: 530px 440px;
+    grid-template-rows: 500px;
+    grid-template-areas: 
+    "Infos Form";
+    column-gap: 30px;
+    width: 1000px;
+    margin: 40px auto 40px;
 }
 
-.infos {
-    display: grid;
-    grid-template-columns: 260px 100px 150px;
-    grid-template-rows: 250px 210px;
-    column-gap: 20px;
-    margin-top: 80px;
+img {
+    width: 530px;
+    height: 270px;
 }
 
 .office {
-    grid-area: 1 / 1 / 2 / span 2;
+    grid-area: Infos;
+    align-self: start;
+    width: 545px;
+    display: grid;
+    grid-template-columns: 250px 80px 10px 150px;
+    grid-template-rows: 250px 180px;
+    grid-template-areas: 
+    "Office Office Office Office"
+    "Infos Days Point Hours";
+    column-gap: 15px;
+    row-gap: 40px;
 }
 
-.name {
-    grid-area: 2 / 1 / 3 / 2;
+.office__img {
+    grid-area: Office;
 }
 
-.days {
-    grid-area: 2 / 2 / 3 / 3;
+.office__infos {
+    grid-area: Infos;
+    border-right: solid 1px rgb(230, 229, 229);
+    font-family: 'muli';
 }
 
-.hours {
-    grid-area: 2 / 3 / 3 / 4;
+.office__days {
+    grid-area: Days;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: muli;
 }
 
+.office__hours {
+    grid-area: Hours;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: prata;
+}
+
+.office__point {
+    grid-area: Point;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.office__name {
+    font-size: 20px;
+    font-family: 'prata';
+}
+
+.office__info {
+    color: rgb(102, 101, 101);
+}
 
 /* FORMULAIRE DE CONTACT */
 
+.container__form {
+    width: 450px;
+}
+
 .form {
+    grid-area: Form;
     display: grid;
-    grid-template-columns: repeat(2, 350px);
-    grid-template-rows: repeat(3, 100px) 150px 100px;
+    width: 430px;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(3, 70px) 150px 80px;
+    grid-template-areas:
+    "FirstName LastName"
+    "Email Phone"
+    "Subject Subject"
+    "Message Message"
+    "Button .";
+    column-gap: 30px;
+    row-gap: 10px;
+}
+
+input { 
+    width: 100%;
+    height: 40px;
+}
+
+label {
+    font-family: prata;
+    vertical-align: top;
+}
+
+textarea {
+    width: 104%;
+    height: 140px;
+    vertical-align: baseline;
+}
+
+.form__firstname {
+    grid-area: FirstName;
+}
+
+.form__name {
+    grid-area: LastName;
+}
+
+.form__mail {
+    grid-area: Email;
+}
+
+.form__phone {
+    grid-area: Phone;
+}
+
+.form__subject {
+    grid-area: Subject;
+}
+
+.form__msg {
+    text-align: start;
+    grid-area: Message;
 }
 
 .button {
-    background-color: black;
-    color: var(--color-3);
-    width: 100px;
+    width: 100%;
+    grid-area: Button;
+    align-self: end;
 }
 
+button {
+    width: 100%;
+    color: white;
+    background: #302E2F;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+}
 
 /* MAP */
 
+.map {
+    margin: auto;
+    width: 1000px;
+}
 
-/* .map > img {
-    width: 500px;
-    height: 200px;
-} */
+.map__img {
+    width: 1000px;
+    height: 350px;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
 
 /* OTHER VENUES */
 
 .venue {
+    font-family: muli;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 30px 100px 240px;
-    column-gap: 20px;
+    grid-template-columns: 60px repeat(3, 1fr) 60px;
+    grid-template-rows: 80px 280px;
+    grid-template-areas: 
+    ". header header header ."
+    "flecheLeft Australia America Switzerland flecheRight";
+    width: 1120px;
+    /* column-gap: 30px; */
+    /* row-gap: 10px; */
     margin: auto;
 }
 
-.venue > div > img {
-    width: 70px;
-}
-
-.venue > h3 {
-    grid-area: 1 / 1 / 2 / span 3;
+.venue__title {
+    grid-area: header;
     text-align: center;
+    font-size: 25px;
+    margin-top: 0;
+    font-family: prata;
 }
 
-.Australia > img {
-    grid-area: 2 / 1 / 3 / 2;
+.venue__Australia__img {
+    grid-area: Australia;
+    width: 80px;
+    height: 80px;
+    padding-bottom: 20px;
+    justify-self: center;
 }
 
-.Australia > p {
-    grid-area: 3 / 1 / 4 / 2;
+.venue__Australia__info {
+    grid-area: Australia;
+    text-align: center;
+    align-self: end;
+    font-family: prata;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.America > img {
-    grid-area: 2 / 2 / 3 / 3;
+.venue__America__img {
+    grid-area: America;
+    width: 80px;
+    height: 80px;
+    padding-bottom: 20px;
+    justify-self: center;
 }
 
-.America > p {
-    grid-area: 3 / 2 / 4 / 3;
+.venue__America__info {
+    grid-area: America;
+    text-align: center;
+    align-self: end;
+    font-family: prata;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: solid 1px rgb(230, 229, 229);
+    border-right: solid 1px rgb(230, 229, 229);
 }
 
-.Switzerland > img {
-    grid-area: 2 / 3 / 3 / 4;
+.venue__Switzerland__img {
+    grid-area: Switzerland;
+    width: 80px;
+    height: 80px;
+    padding-bottom: 20px;
+    justify-self: center;
 }
 
-.Switzerland > p {
-    grid-area: 3 / 3 / 4 / 4;
+.venue__Switzerland__info {
+    grid-area: Switzerland;
+    text-align: center;
+    align-self: end;
+    font-family: prata;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.venue__country {
+    margin-top: 0;
+    font-size: 20px;
+    /* font-weight: bold; */
+    font-family: prata;
+}
+
+.venue__info {
+    color: rgb(102, 101, 101);
+}
+
+.flecheGauche {
+    font-size: 40px;
+    color: rgb(102, 101, 101);
+    text-align: center;
+    border: solid 1px lightgrey;
+    border-radius: 3px;
+    padding: 10px;
+    grid-area: flecheLeft;
+    align-self: center;
+    margin: 0;
+}
+
+.flecheDroite {
+    font-size: 40px;
+    color: rgb(102, 101, 101);
+    text-align: center;
+    border: solid 1px lightgrey;
+    border-radius: 3px;
+    padding: 10px;
+    grid-area: flecheRight;
+    align-self: center;
+    margin: 0;
 }

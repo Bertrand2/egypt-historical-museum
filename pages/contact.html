@@ -8,94 +8,118 @@
     <title>Contact</title>
 </head>
 <body>
+    <header>
+
+    </header>
     <div class="banner">
-        <p>Contact Us</p>
-        <p>We're always here to help you with anything you might need.</p>
-        <p>HOME : THE MUSEUM : CONTACT US</p>
-    </div>
-    <div class=infos>
-        <div class="office">
-            <img src="../assets/contact/contact-1-1.jpg">
-        </div>
-        <div class="name">
-            <p>United Kingdom</p>
-            <p>61 Wellfield Road Roath Cardiff</p>
-            <p>CF24 3DG</p>
-            <p>p: 321 (888) 789-0123</p>
-            <p>E: egyptmuseum@example.com</p>
-        </div>
-        <div class="days">
-            <p>MO & TU :</p>
-            <p>WE & TH :</p>
-            <p>SA & SU :</p>
-            <p>FR :</p>
-        </div>
-        <div class="hours">
-            <p>9am to 6.00pm</p>
-            <p>10am to 7.00pm</p>
-            <p>10am to 7.00pm</p>
-            <p>Closed</p>
+        <p class="banner__title">Contact Us</p>
+        <p class="banner__text">We're always here to help you with anything you might need.</p>
+        <div class="banner__link">
+            <p class="banner__content">Home : The Museum : Contact Us</p>
         </div>
     </div>
-    <div class="form">
-        <form action="/ma-page-de-traitement" method="post">
-            <div>
-                <label for="surname">First Name :</label>
-                <input type="text" id="surname" name="user_surname">
+    <div class="container">
+        <div class=office>
+            <div class="office__img">
+                <img src="../assets/contact/contact-1-1.jpg">
             </div>
-            <div>
-                <label for="name">Last Name :</label>
-                <input type="text" id="name" name="user_name">
+            <div class="office__infos">
+                <p class="office__name">United Kingdom</p>
+                <p class="office__info">61 Wellfield Road Roath Cardiff</p>
+                <p class="office__info">CF24 3DG</p>
+                <p class="office__info">p: 321 (888) 789-0123</p>
+                <p class="office__info">E: egyptmuseum@example.com</p>
             </div>
-            <div>
-                <label for="mail">Email :</label>
-                <input type="email" id="mail" name="user_mail">
+            <div class="office__days">
+                <p class="office__day1">MO & TU</p>
+                <p class="office__day2">WE & TH</p>
+                <p class="office__day3">SA & SU</p>
+                <p class="office__day4">FR</p>
             </div>
-            <div>
-                <label for="phone">Phone :</label>
-                <input type="text" id="phone" name="user_phone">
+            <div class="office__point">
+                <p class="office__point1">:</p>
+                <p class="office__point2">:</p>
+                <p class="office__point3">:</p>
+                <p class="office__point4">:</p>
             </div>
-            <div>
-                <label for="subject">Subject :</label>
-                <input type="text" id="subject" name="user_subject">
+            <div class="office__hours">
+                <p class="office__info">9am to 6.00pm</p>
+                <p class="office__info">10am to 7.00pm</p>
+                <p class="office__info">10am to 7.00pm</p>
+                <p class="office__info">Closed</p>
             </div>
-            <div>
-                <label for="msg">Message :</label>
-                <textarea id="msg" name="user_message"></textarea>
-            </div>
-            <div class="button">
-                <button type="submit">SEND MESSAGE</button>
-            </div>
-        </form>
+        </div> 
+        <div class="container__form">
+            <form class="form" action="" method="post">
+                <div class="form__firstname">
+                    <label for="surname">First Name :</label>
+                    <input type="text" id="surname" name="user__surname">
+                </div>
+                <div class="form__name">
+                    <label for="name">Last Name :</label>
+                    <input type="text" id="name" name="user__name">
+                </div>
+                <div class="form__mail">
+                    <label for="mail">Email :</label>
+                    <input type="email" id="mail" name="user__mail">
+                </div>
+                <div class="form__phone">
+                    <label for="phone">Phone :</label>
+                    <input type="text" id="phone" name="user__phone">
+                </div>
+                <div class="form__subject">
+                    <label for="subject">Subject :</label>
+                    <input type="text" id="subject" name="user__subject">
+                </div>
+                <div class="form__msg">
+                    <label for="msg">Message :</label>
+                    <textarea id="msg" name="user__message"></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit">SEND MESSAGE</button>
+                </div>
+            </form>
+        </div>
     </div>
-    <!-- <div class="map">
-        <img src="../assets/contact/maps.png">
+    <div class="map">
+        <img class="map__img" src="../assets/contact/maps.png">
     </div>
     <div class="venue">
-        <h3>Other Venues</h3>
-        <div class="Australia">
-            <img src="../assets/contact/venue-1-1.png">
-            <p>Australia</p>
-            <p>61 Wellfield Road Roath Cardiff</p>
-            <p>CF24 3DG</p>
-            <p>p: 321 (888) 789-0123</p>
-            <p>E: egyptmuseum@example.com</p>
+
+        <h3 class="venue__title">Other Venues</h3>
+
+        <p class="flecheGauche">&lsaquo;</p>
+        <div class="venue__Australia__info">
+            <img class="venue__Australia__img" src="../assets/contact/venue-1-1.png">
+            <p class="venue__country">Australia</p>
+            <p class="venue__info">61 Wellfield Road Roath Cardiff</p>
+            <p class="venue__info">CF24 3DG</p>
+            <p class="venue__info">p: 321 (888) 789-0123</p>
+            <p class="venue__info">E: egyptmuseum@example.com</p>
         </div>
-        <div class="America">
-            <img src="../assets/contact/venue-1-2.png">
-            <p>US of America</p>
-            <p>973 Gilbert Ferry Road SE, Attalla</p>
-            <p>AL 35954</p>
-            <p>P: +1 (201) 555 555 55</p>
-            <p>E: egyptmuseum@example.com</p>
+        
+        <div class="venue__America__info">
+            <img class="venue__America__img" src="../assets/contact/venue-1-2.png">
+            <p class="venue__country">US of America</p>
+            <p class="venue__info">973 Gilbert Ferry Road SE, Attalla</p>
+            <p class="venue__info">AL 35954</p>
+            <p class="venue__info">P: +1 (201) 555 555 55</p>
+            <p class="venue__info">E: egyptmuseum@example.com</p>
         </div>
-        <div class="Switzerland">
-            <img src="../assets/contact/venue-1-3.png">
-            <p>Switzerland</p>
-            <p>Todistrasse 7, avenue de la Paix</p>
-            <p>1202 Geneva</p>
-            <p>p: (020) 777 88 700</p>
-            <p>E: egyptmuseum@example.com</p>
-        </div> -->
+
+        
+        <div class="venue__Switzerland__info">
+            <img class="venue__Switzerland__img" src="../assets/contact/venue-1-3.png">
+            <p class="venue__country">Switzerland</p>
+            <p class="venue__info">Todistrasse 7, avenue de la Paix</p>
+            <p class="venue__info">1202 Geneva</p>
+            <p class="venue__info">p: (020) 777 88 700</p>
+            <p class="venue__info">E: egyptmuseum@example.com</p>
+        </div>
+        <p class="flecheDroite">&rsaquo;</p>
+    </div>
+    <footer>
+
+    </footer>
 </body>
 </html>
