@@ -44,7 +44,7 @@ STYLE
 =========================*/
 
 /*GENERAL*/
-h1, h2, h3{
+h1, h2{
     font-family: prata;
     font-weight: 90;
     margin-bottom: 20px;
@@ -56,10 +56,6 @@ h1{
     text-align: center;
 }
 h2{
-    font-size: 1.8rem;
-    color: var(--color-darkgrey);
-}
-h3{
     font-size: 1.3rem;
     margin: 25px 0;
     color: var(--color-darkgrey);
