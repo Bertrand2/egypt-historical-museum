@@ -12,12 +12,9 @@
     </header>
     <main>
         <a href="#" class="toTheTop"><img src="../assets/home/up-arrow.svg" alt="up"></a>
-        <section class="carrousel">
-            <div class="carrousel__slider">
-                <img src="../assets/home/slider-1-1.jpg" alt="" class="carrousel__image">
-            </div>
+        <section id="carrousel" class="carrousel">
             <div class="carrousel__content">
-                <div class="carrousel__left-arrow">←</div>
+                <div id="left" class="carrousel__left-arrow">←</div>
                 <div class="carrousel__center-content">
                     <div class="carrousel__creed">
                         <hr>
@@ -27,13 +24,17 @@
                     <h1 class="carrousel__title">World's Leading Museum of History Over 2.3 k Collection</h1>
                     <p class="carrousel__quote">Let your Inner Light Grow With the Silence of History</p>
                     <a class="carrousel__more" href="#">FIND OUT MORE</a>
-                    <div class="ca"></div>
+                    <div class="carrousel__dots">
+                        <div class="carrousel__dot--current carrousel__dot"></div>
+                        <div class="carrousel__dot"></div>
+                        <div class="carrousel__dot"></div>
+                    </div>
                 </div>
-                <div class="carrousel__right-arrow">→</div>
+                <div id="right" class="carrousel__right-arrow">→</div>
             </div>
         </section>
         <section class="about whiteBG">
-            <article>
+            <article class="about__article">
                 <p class="marker">ABOUT US</p>
                 <h2>History of Egypt</h2>
                 <h3>The World's Leading Museum of History & Culture.</h3>
@@ -124,6 +125,9 @@
                     <p>VIEW ALL UPCOMING EVENTS +</p>
                 </div>
                 <div class="events__articles">
+                    <div class="events__creamBG-container">
+                        <div class="events__creamBG"></div>
+                    </div>
                     <article class="events__event">
                         <div class="events__event-illustration">
                             <img src="../assets/home/event-2-1.jpg" alt="" class="events__image">
@@ -303,7 +307,7 @@
             <p class="marker">NEWS BLOG</p>
             <h2>Latest from our blog</h2>
             <div class="blog__content">
-                <article class="blog__article--tall">
+                <article class="blog__article--tall article1">
                     <img src="../assets/home/blog-2-1.jpg" alt="">
                     <p class="blog__author">ADMIN_PRESS RELEASE</p>
                     <p class="blog__title">Celebrating Authentic Marathon at our Egypt Museum</p>
@@ -314,11 +318,11 @@
                         <p class="blog__date">21.10.2019</p>
                     </div>
                 </article>
-                <article class="blog__quote">
+                <article class="blog__quote article2">
                     <p class="blog__citation">"While I stand & regard it, the indefference to myself shown by a work of art in itself is art"</p>
                     <p class="blog__more">READ MORE +</p>
                 </article>
-                <article class="blog__article">
+                <article class="blog__article article3">
                     <img src="../assets/home/blog-2-2.jpg" alt="">
                     <p class="blog__author">ADMIN_PRESS RELEASE</p>
                     <p class="blog__title">Celebrating Authentic Marathon at our Egypt Museum</p>
@@ -328,7 +332,7 @@
                         <p class="blog__date">21.10.2019</p>
                     </div>
                 </article>
-                <article class="blog__article--tall">
+                <article class="blog__article--tall article4">
                     <img src="../assets/home/blog-2-3.jpg" alt="">
                     <p class="blog__author">ADMIN_PRESS RELEASE</p>
                     <p class="blog__title">Celebrating Authentic Marathon at our Egypt Museum</p>
@@ -346,4 +350,5 @@
 
     </footer>
 </body>
+<script src="../scripts/home-carrousel.js"></script>
 </html>
