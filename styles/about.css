@@ -65,7 +65,6 @@ header
     justify-content: space-between;
     padding:0 5px;
 }
-
 #icon6
 {
     display: block;
@@ -367,6 +366,23 @@ input[type=search]
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.wd3
+{
+    
+    
+}
+.wd4
+{
+    display: flex;
+    border-top: 2px ;
+    color: #726e6e;
+    border-top: solid 1px #726e6e;
+    width: 200px;
+    height: auto;
+    padding-top: 30px;
+    font-size: 1.0em;
+}
+
 
 
 
