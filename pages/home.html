@@ -8,12 +8,72 @@
         name="description"           
         content="The Egypt Museum is located in Cardiff, California and offers a incredible amount of exhibits about the ancient egyptian civilisation. It is also a host for numerous art expositions and events.">
     <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
     <link rel="preload" href="../styles/fonts/muli.ttf" as="fonts">
     <link rel="preload" href="../styles/fonts/prata.ttf" as="fonts">
 </head>
 <body>
     <header>
-
+        <div class="header-top">
+            <div class="header-top__part-left">
+                <div class="header-top__schedule">
+                    <img src="../assets/header/clock.png" alt=" ">
+                    <p>Plan Your Visit Today : 9<span class="header-top__exponent"> 00</span></p>
+                    <div class="header-top__orange-line"></div>
+                    <p>7<span class="header-top__exponent"> 30</span></p>
+                </div>
+                <div class="header-top__grey-line"></div>
+                <div class="header-top__location">
+                    <img src="../assets/header/map.png" alt="icon-map">
+                    <p>Get Direction</p>
+                </div>
+            </div>
+            <div class="header-top__part-right">
+                <a href="#"><img src="../assets/header/icon-facebook.svg" alt=" "></a>
+                <a href="#"><img src="../assets/header/icon-twitter.svg" alt=" "></a>
+                <a href="#"><img src="../assets/header/icon-instagram.svg" alt=" "></a>
+                <a href="#"><img src="../assets/header/icon-youtube.svg" alt=" "></a>
+                <input type="search" class="header-top__search">
+                <select name="language" class="header-top__language">
+                    <option value="EN">EN</option>
+                    <option value="FR">FR</option>
+                </select>
+                <a class="header-top__tickets">TICKETS</a>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="header-bottom__part-left">
+                <img src="../assets/header/light-logo.png" alt="logo" class="header-bottom__logo">
+            </div>
+            <nav class="header-bottom__part-right">
+                <a class="header-bottom__pages">Home</a>
+                <a class="header-bottom__pages">The Museum</a>
+                <a class="header-bottom__pages">Visit</a>
+                <a class="header-bottom__pages">What's On</a>
+                <a class="header-bottom__pages">Collections</a>
+                <a class="header-bottom__pages">Pages</a>
+                <div class="header-bottom__shop">
+                    <img src="../assets/header/icon-shopping-cart.svg" alt="" class="header-bottom__shopping-cart">
+                </div>
+                <div class="header-bottom__hamburger">
+                    <input type="checkbox" class="hamburger__button">
+        
+                    <span class="hamburger__line1"></span>
+                    <span class="hamburger__line2"></span>
+                    <span class="hamburger__line3"></span>
+        
+                    <ul class="hamburger__menu">
+                        <a href="home.html"><li>Home</li></a>
+                        <a href="about.html"><li>About</li></a>
+                        <a href="events.html"><li>Events</li></a>
+                        <a href="event-details.html"><li>Event Details</li></a>
+                        <a href="contact.html"><li>Contact</li></a>
+                    </ul>
+                </div>
+                <img src="../assets/header/icon-menu.svg" alt="" class="header-bottom__false-menu">
+            </nav>
+        </div>
     </header>
     <main>
         <a href="#" class="toTheTop"><img src="../assets/home/up-arrow.svg" alt="up"></a>
@@ -352,7 +412,20 @@
         </section>
     </main>
     <footer>
-
+        <img src="../assets/footer/footer-logo-1-1.png" alt=" " class="footer__logo">
+        <div class="footer__mail">
+            <div class="footer__mail-img-container">
+                <img src="../assets/footer/icon-email.svg" alt=" " class="footer__mail-img">
+            </div>
+            <input type="text" id="name" placeholder="Enter Email Address..." class="footer__mail-field">
+        </div>
+        <div class="footer__social">
+            <a href="#"><img src="../assets/footer/icon-facebook.svg" alt=" "></a>
+            <a href="#"><img src="../assets/footer/icon-twitter.svg" alt=" "></a>
+            <a href="#"><img src="../assets/footer/icon-instagram.svg" alt=" "></a>
+            <a href="#"><img src="../assets/footer/icon-youtube.svg" alt=" "></a>
+        </div>
+        <p class="footer__copyright">Copyrights © 2019 <span class="footer__colored">Egypt</span>, All Rights Reserved.</p>
     </footer>
 </body>
 <script src="../scripts/home-carrousel.js"></script>
