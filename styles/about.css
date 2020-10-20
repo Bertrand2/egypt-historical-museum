@@ -170,7 +170,7 @@ input[type=search]
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 85%;
+    width: 80%;
     justify-content: space-around;
     margin: 0;
 }
@@ -288,7 +288,7 @@ input[type=search]
 #posibilities
 {
     display: flex;
-    width: 85%;
+    width: 80%;
     border: #d99578 solid 1px;
     justify-content: space-between;
     margin: 0 auto;
@@ -325,10 +325,9 @@ input[type=search]
     justify-content: center;
     flex-wrap: wrap;
     background-image: url(../assets/about/video-2-1.jpg);
-    width: 85%;
+    width: 80%;
     height: 500px;
-    margin: 0 auto;
-    border: 1px solid coral;
+    margin: 0 auto; 
 }
 .video-h3
 {
@@ -339,13 +338,51 @@ input[type=search]
 {
     font-size: 1.3em;  
     color: white;
-
+}
+#icon-play
+{
+    filter: invert(100%);
+   text-align: center;
+}
+.div-hp
+{
+    text-align: center;
 }
 
+/*section-video and*/
 
 
 
-/*section-vide and*/
+
+
+
+/*section BEHIND*/
+.BEHIND
+{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+#BEHIND
+{
+    border-top: 2px solid #d99578 ;
+    margin-top: 10px;
+    width:  200PX;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: #726e6e;
+}
+#Board
+{
+    font-size: 50px;
+    color: #444444;
+}
+/*section BEHIND and*/
+
+
 
 
 
@@ -354,10 +391,9 @@ input[type=search]
 
 #section-teams
 {
-    width: 85%;
-    height: 500px;
+    width: 80%;
     margin: 0 auto;
-    border: 1px solid coral;
+    margin-bottom: 100px;
 }
 .ul-video
 {
@@ -366,22 +402,35 @@ input[type=search]
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.wd3
-{
-    
-    
-}
 .wd4
 {
     display: flex;
     border-top: 2px ;
     color: #726e6e;
     border-top: solid 1px #726e6e;
-    width: 200px;
+    width: 250px;
     height: auto;
     padding-top: 30px;
+    margin-top: 30px;
     font-size: 1.0em;
+    filter: invert(50%);
+    justify-content: space-around;
 }
+.psv
+{
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-size: 1.3em;
+    text-align: center;
+    color:  #444444;
+}
+.ps4
+{
+    text-align: center;
+    color:  #444444;
+}
+
+
 
 
 
