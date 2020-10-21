@@ -259,6 +259,7 @@ HAMBURGER
 .hamburger__menu a{
     padding: 10px 0;
     font-size: 22px;
+    text-decoration: unset;
 }
 .hamburger__menu a:hover{
     color: var(--color-orange);
