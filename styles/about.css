@@ -98,7 +98,7 @@ ul
 #about
 {
     border-top: solid 3px #d99578;
-    width: 80px;
+    width: max-content;
     text-align: center;
     line-height: 50px;
     margin: 0 auto;
