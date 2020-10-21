@@ -95,11 +95,16 @@ header img{
     filter: invert(50%);
 }
 .header-top__search{
-    background-color: var(--color-darkgrey);
+    background-color: transparent;
+    background-image: url("../assets/header/magnifying-glass.svg");
+    background-size: 80%;
+    background-position: right;
+    background-repeat: no-repeat;
+    filter: invert();
     border: 1px solid var(--color-text);
     border-radius: 3px;
     padding: 5px;
-    color: var(--color-white);
+    color: #000000;
     width: 2rem;
     transition: width 0.6s;
 }
@@ -112,6 +117,7 @@ header img{
 }
 .header-top__search:focus{
     width: 10rem;
+    background-image: unset;
 }
 .header-top__tickets{
     padding: 6px;
