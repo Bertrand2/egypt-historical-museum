@@ -7,59 +7,82 @@
     <link rel="stylesheet" href="../styles/about.css">
 </head>
 <body>
+
+
+
 <!--partie header-->
-    <header>
-        <div id="premier-section">
-                <ul id="info-1">
-                    <li><img src="../assets/about/clock.png" alt="orloge"></li>
-                    <li>plan Your Visit Today: 9 - 7,30</li>
-                    <li><img src="../assets/about/map.png" alt="icon-map"></li>
-                    <li>Get Direction</li>
-                </ul>         
-        <nav>
-                <ul id="plan-your">
-                    <li id="icon1"><img src="../assets/about/facebook-app-symbol.png" alt=""></li>
-                    <li id="icon2"><img src="https://img.icons8.com/android/24/000000/twitter.png"/></li>
-                    <li id="icon3"><img src="https://img.icons8.com/android/24/000000/instagram.png" style="height:24px; width: 24px;"/></li>
-                    <li id="icon4"><img src="https://img.icons8.com/material-sharp/24/000000/start.png" style="height:24px; width: 24px;"/></li>
-                    <li id="icon5"><form><input type="search"></form></li>
-                    <li id="icon6">
-                        <form>
-                            <select name="lang">
-                                <option value="EN"><span style="color: rgb(230, 227, 227);">EN</span></option>
-                                <option value="FR">FR</option>
-                            </select>
-                        </form>
-                    </li>
-                    <li class="icon7" style="color: white;">TICKETS</li>
-                </ul>
-        </nav>
+<header>
+    <div class="header-top">
+        <div class="header-top__part-left">
+            <div class="header-top__schedule">
+                <img src="../assets/header/clock.png" alt="icon">
+                <p>Plan Your Visit Today : 9<span class="header-top__exponent"> 00</span></p>
+                <div class="header-top__orange-line"></div>
+                <p>7<span class="header-top__exponent"> 30</span></p>
+            </div>
+            <div class="header-top__grey-line"></div>
+            <div class="header-top__location">
+                <img src="../assets/header/map.png" alt="icon-map">
+                <p>Get Direction</p>
+            </div>
         </div>
-    </header>
-<!--partie header and-->            
-    <!--dexieme partie de la partie header en sous de la barre nav-->
-<section class="dexieme-section">
-    <div id="flex3">
-        <img src="../assets/about/light-logo.png" alt="logo-egypt">
-        <ul id="bloc-menu">
-            <li>Home</li>
-            <li style="color:#d99578;">The Museum</li>
-            <li>Visit</li>
-            <li>What's On Collections</li>
-            <li>Pages</li>
-            <li><img src="https://img.icons8.com/android/24/000000/shopping-cart.png"/></li>
-            <li><img src="../assets/about/menu.png" alt="iocn-menu"></li>
-        </ul>
+        <div class="header-top__part-right">
+            <a href="#"><img src="../assets/header/icon-facebook.svg" alt="icon"></a>
+            <a href="#"><img src="../assets/header/icon-twitter.svg" alt="icon"></a>
+            <a href="#"><img src="../assets/header/icon-instagram.svg" alt="icon"></a>
+            <a href="#"><img src="../assets/header/icon-youtube.svg" alt="icon"></a>
+            <input type="search" class="header-top__search">
+            <select name="language" class="header-top__language">
+                <option value="EN">EN</option>
+                <option value="FR">FR</option>
+            </select>
+            <a class="header-top__tickets">TICKETS</a>
+        </div>
     </div>
-</section>
-        
-<!--dexieme partie de la partie header en sous de la barre nav and-->
+    <div class="header-bottom">
+        <div class="header-bottom__part-left">
+            <img src="../assets/header/light-logo.png" alt="logo" class="header-bottom__logo">
+        </div>
+        <nav class="header-bottom__part-right">
+            <a class="header-bottom__pages">Home</a>
+            <a class="header-bottom__pages">The Museum</a>
+            <a class="header-bottom__pages">Visit</a>
+            <a class="header-bottom__pages">What's On</a>
+            <a class="header-bottom__pages">Collections</a>
+            <a class="header-bottom__pages">Pages</a>
+            <div class="header-bottom__shop">
+                <img src="../assets/header/icon-shopping-cart.svg" alt="cart" class="header-bottom__shopping-cart">
+            </div>
+            <div class="header-bottom__hamburger">
+                <input type="checkbox" class="hamburger__button">
+    
+                <span class="hamburger__line1"></span>
+                <span class="hamburger__line2"></span>
+                <span class="hamburger__line3"></span>
+    
+                <div class="hamburger__menu">
+                    <a href="home.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="events.html">Events</a>
+                    <a href="event-details.html">Event Details</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <img src="../assets/header/icon-menu.svg" alt="icon" class="header-bottom__false-menu">
+        </nav>
+    </div>
+</header>
+<!--partie header and-->            
+
+
 <!--section-images-->
     <section id="section-img">
         <div class="titre-1">About Our Museum</div>
         <div class="HOME"><p>HOME : THE MUSEUM</p></div>
     </section>
 <!--section-images-->
+
+
 <!--section about-us-->
     <section class="about-us">
         <div id="about">
@@ -99,6 +122,11 @@ history<br>over 2.3K Collection</div><br><br>
 <!--deuxieme section la troisieme section qui se metra à droite and-->
     </section>
 <!--section about-us and -->
+
+
+
+<!--section departement-->
+
 <div id="departement">
     <div id="div-ph">
         <div id="p-DEPARTEMENT"><P>DEPARTEMENT</P></div><br>
@@ -106,7 +134,6 @@ history<br>over 2.3K Collection</div><br><br>
     </div>
    </div>
 
-<!--section departement-->
 <!--section departement and-->
 
 
@@ -133,18 +160,17 @@ history<br>over 2.3K Collection</div><br><br>
        </div>
    </section>  
 <!--section posibilities-and-->
+
+
 <!--section video-->
 
    <section id="section-video">
        <div class="">
            <div id="icon-play">
-              <img src="../assets/about/play.png" alt="">
+              <img src="../assets/about/play.png" alt="icon-play">
            </div>
-
-           <div class="div-hp">
-            <h3 class="video-h3">Great Art and Great Art Experiences</h3>
-            <p class="video-p">Since 1969</p>
-           </div>
+           <h3 class="video-h3">Great Art and Great Art Experiences</h3>
+           <p class="video-p">Since 1969</p>
        </div>
    </section> 
    <section class="BEHIND">
@@ -155,6 +181,9 @@ history<br>over 2.3K Collection</div><br><br>
    </section>
 
 <!--section video and-->
+
+
+<!--section-teams-->
    <section id="section-teams">
        <ul class="ul-video">
            <li>
@@ -211,33 +240,28 @@ history<br>over 2.3K Collection</div><br><br>
            </li>
        </ul>
     </section> 
-    
+    <!--section-teams-->
+
+
+    <!--section footer-->
     <footer>
-        <ul id="footer-div">
-            <br><br><br><br><br>
-            <li>
-                <img src="../assets/about/footer-logo-1-1.png" alt="" style="height:initial ; width: 150px;">
-            </li>
-            <li>
-                <form>
-                    <input type="text" id="name" placeholder="Enter Email Address...">
-                   <!-- <input type="submit" value="ok" class="button-3"> -->
-                </form>
-            </li>
-            <br>
-            <li class="p-footer">
-                <ul class="footer-nav"> 
-                    <li class="footer-li"><img src="../assets/about/facebook-app-symbol.png" alt=""></li>
-                    <li class="footer-li"><img src="https://img.icons8.com/android/24/000000/twitter.png"/></li>
-                    <li class="footer-li"><img src="https://img.icons8.com/android/24/000000/instagram.png"/> </li>
-                    <li class="footer-li"><img src="https://img.icons8.com/material-sharp/24/000000/start.png"/></li>
-                </ul>   
-            </li>
-            <br>
-            <li>
-                <p class="p-footer">Copyright © 2020 <span id="Egypt-footer">Egypt</span>, ALLRights Reserved.</p>            
-            </li>
-        </ul>
+        <img src="../assets/footer/footer-logo-1-1.png" alt="museum logo" class="footer__logo">
+        <div class="footer__mail">
+            <div class="footer__mail-img-container">
+                <img src="../assets/footer/icon-email.svg" alt="mail" class="footer__mail-img">
+            </div>
+            <input type="text" id="name" placeholder="Enter Email Address..." class="footer__mail-field">
+        </div>
+        <div class="footer__social">
+            <a href="#"><img src="../assets/footer/icon-facebook.svg" alt="icon"></a>
+            <a href="#"><img src="../assets/footer/icon-twitter.svg" alt="icon"></a>
+            <a href="#"><img src="../assets/footer/icon-instagram.svg" alt="icon"></a>
+            <a href="#"><img src="../assets/footer/icon-youtube.svg" alt="icon"></a>
+        </div>
+        <p class="footer__copyright">Copyrights © 2019 <span class="footer__colored">Egypt</span>, All Rights Reserved.</p>
     </footer>
+    <!--section footer-->
+
+    
 </body>
 </html>
