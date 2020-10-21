@@ -32,8 +32,8 @@ html{
 .banner {
     text-align: center;
     background-image: url(../assets/contact/banner.jpg);
-    background-size: 100%;
-    background-position-x: right ;
+    background-size: cover;
+    background-position: center ;
     background-repeat: no-repeat;
     padding: 50px;
 }
@@ -343,4 +343,315 @@ button {
     grid-area: flecheRight;
     align-self: center;
     margin: 0;
+}
+
+
+/* RESPONSIVE  */
+
+/* TABLETTE  */
+
+@media screen and (max-width: 768px) {
+    .banner {
+        max-width: 768px;
+        height: 250px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner__title {
+        width: 50%;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .banner__text {
+        margin: 0;
+        width: 70%;
+    }
+
+    .banner__link {
+        width: 650px;
+        margin : 0;
+        text-align: left;
+    }
+
+    .banner__content {
+        align-self: start;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    .office {
+        grid-area: infos;
+        display: grid;
+        grid-template-columns: 650px;
+        grid-template-rows: 320px 200px 200px;
+        grid-template-areas: 
+        "img"
+        "adress"
+        "schedule";
+        column-gap: 0;
+        grid-gap: 0;
+        margin-bottom: 40px;
+    }
+
+    .office__infos {
+        display: flex;
+        flex-direction: column;
+        border-right: none;
+        border-bottom: solid 1px rgb(230, 229, 229);
+    }
+
+    .office__img {
+        grid-area: img;
+        height: 300px;
+    }
+
+    .office__pic {
+        width: 650px;
+        height: 300px;
+    }
+
+    .office__infos {
+        grid-area: adress;
+    }
+
+    .office__info {
+        margin: 5px;
+    }
+
+    .office__schedule {
+        grid-area: schedule;
+        display: grid;
+        grid-template-columns: 100px 20px 150px;
+        grid-template-areas: 
+        "days point hours";
+        padding-top: 20px;
+    }
+
+    .office__days {
+        grid-area: days;
+    }
+
+    .office__point {
+        grid-area: point;
+    }
+    .office__hours {
+        grid-area: hours;
+        justify-content: space-around;
+    }
+
+    .form {
+        grid-template-columns: 630px;
+        grid-template-rows: repeat(5, 70px) 150px 70px;
+        grid-template-areas: 
+        "FirstName"
+        "LastName"
+        "Email"
+        "Phone"
+        "Subject"
+        "Message"
+        "Button";
+    }
+
+    .form__firstname {
+        grid-area: FirstName;
+    }
+
+    .form__name {
+        grid-area: LastName;
+    }
+    
+    .form__mail {
+        grid-area: Email;
+    }
+    
+    .form__phone {
+        grid-area: Phone;
+    }
+    
+    .form__subject {
+        grid-area: Subject;
+    }
+    
+    .form__msg {
+        text-align: start;
+        grid-area: Message;
+        width: 98%;
+    }
+
+    .button {
+        width: 50%;
+        grid-area: Button;
+        align-self: end;
+    }
+
+    .map {
+        width: 650px;
+        margin-left: 30px;
+    }
+
+    .map__img {
+        width: 650px;
+        margin: auto;
+    }
+
+    .venue {
+        width: 650px;
+        grid-template-columns: 30px repeat(2, 325px) 30px;
+        grid-template-rows: 80px 280px;
+        grid-template-areas: 
+        ". header header ."
+        "flecheLeft Australia America flecheRight";
+        margin: 0;
+        margin-top: 80px;
+        /* margin-left: 30px; */
+    }
+
+    .venue__title {
+        grid-area: header;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 0;
+        font-family: prata;
+    }
+    
+    .venue__Australia__img {
+        grid-area: Australia;
+        width: 80px;
+        height: 80px;
+        padding-bottom: 20px;
+        justify-self: center;
+    }
+    
+    .venue__Australia__info {
+        grid-area: Australia;
+        text-align: center;
+        align-self: end;
+        font-family: prata;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .venue__America__img {
+        grid-area: America;
+        width: 80px;
+        height: 80px;
+        padding-bottom: 20px;
+        justify-self: center;
+    }
+    
+    .venue__America__info {
+        grid-area: America;
+        text-align: center;
+        align-self: end;
+        font-family: prata;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-right: none;
+    }
+
+    .venue__Switzerland__info {
+        visibility: hidden;
+    }
+
+}
+
+
+/* TELEPHONE */
+
+@media screen and (max-width: 360px) {
+    .banner {
+        max-width: 360px;
+        height: 300px;
+        padding: 0;
+    }
+
+    .banner__title {
+        width: 330px;
+        margin: 0;
+        margin-bottom: 5Px;
+        text-align: center;
+    }
+
+    .banner__text {
+        margin: 0;
+        width: 70%;
+    }
+
+    .banner__link {
+        width: 330px;
+        margin : 0;
+        text-align: left;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .office {
+        grid-template-columns: 320px;
+        grid-template-rows: 220px 200px 200px;
+    }
+
+    .office__pic {
+        width: 330px;
+        height: 200px;
+    }
+
+    .form {
+        grid-template-columns: 300px;
+    }
+
+    .button {
+        width: 60%;
+    }
+
+    .map {
+        width: 330px;
+        margin-left: 10px;
+    }
+
+    .map__img {
+        width: 330px;
+        height: 400px;
+        margin: auto;
+    }
+
+    .venue {
+        width: 80%;
+        height: 400px;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: 80px 280px 60px;
+        grid-template-areas: 
+        "header header"
+        "Australia Australia"
+        "flecheLeft flecheRight";
+        margin: 0;
+        margin-top: 80px;
+        margin-left: 10px;
+    }
+
+    .venue__America__info {
+        display: none;
+    }
+
+    .venue__Switzerland__info {
+        display: none;
+    }
+    .flecheDroite, .flecheGauche {
+        width: 30%;
+        justify-self: center;
+    }
 }
