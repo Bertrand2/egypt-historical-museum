@@ -241,29 +241,30 @@ HAMBURGER
 }
 
 .hamburger__menu{
-    position: fixed;
+    position: absolute;
     width: 250px;
     margin: -40px 0 0 -150px;
     padding: 20px;
     padding-top: 45px;
 
-    background: var(--color-white);
+    background-color: var(--color-white);
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
     transform: translate(1000%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    display: flex;
+    flex-direction: column;
 }
-.hamburger__menu li{
+.hamburger__menu a{
     padding: 10px 0;
     font-size: 22px;
 }
-.hamburger__button:checked ~ ul{
-    transform: none;
+.hamburger__menu a:hover{
+    color: var(--color-orange);
 }
-
-.hamburger__button:checked ~ .hamberger__menu{
-    display:none;
+.hamburger__button:checked ~ .hamburger__menu{
+    transform: none;
 }
 /*=========================
 RESPONSIVENESS
